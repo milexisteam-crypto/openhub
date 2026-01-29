@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .topbar{
-    position: sticky;
+ display: flex;
+ width: 100vw;
+ align-items: center;
+ justify-content: center;
 }
 
 .search{
@@ -8,7 +13,7 @@
     align-items: center;
     padding: 8px;
     border-radius: 14px;
-    background-color: #f6f6f6;
+    background-color: #cfcfcf;
 }
 
 .search-input{
@@ -33,4 +38,53 @@
 .search-button:hover{
     border-radius: 14px;
     background-color: #e7e7e7df;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'Inter', 'Roboto', sans-serif, serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    width: 100vw;
+    height: 5vh;
+    background: rgb(167, 167, 167);
+position: fixed;
+top: 0;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:space-between;
+padding: 0 30vw 0 30vw;
+}
+ul li {
+    cursor: pointer;
+
+}
+ul li:hover {
+    color: white;
+    transition: 250ms;
+}
+ul li:active {
+    transition: 250ms;
+    color: black;
+}
+.hide {
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+h1 {
+    font-size: 3rem;
 }
