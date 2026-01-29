@@ -1,10 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 14;
+    background-color: #f6f6f6;
 }
-body {
-    width: 100vw;
-    height: 100vh;
-    background: whitesmoke;
+
+.search-input{
+    color: #333333;
+    outline: none;
+    border: none;
+    background: transparent;
 }
