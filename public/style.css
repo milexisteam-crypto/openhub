@@ -1,9 +1,13 @@
+.topbar{
+    position: sticky;
+}
+
 .search{
     width: max-content;
     display: flex;
     align-items: center;
     padding: 8px;
-    border-radius: 14;
+    border-radius: 14px;
     background-color: #f6f6f6;
 }
 
@@ -12,4 +16,21 @@
     outline: none;
     border: none;
     background: transparent;
+    padding: 4px 8px;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.search-button:hover{
+    border-radius: 14px;
+    background-color: #e7e7e7df;
 }
