@@ -13,3 +13,8 @@ document.querySelector(".logo").addEventListener("click", () => {
     behavior: "smooth"
 })
 })
+document.querySelector(".about").addEventListener("click", () => {
+    document.querySelector(".aboutsection").scrollIntoView({
+    behavior: "smooth"
+})
+})
