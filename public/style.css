@@ -2,13 +2,17 @@
 
 .topbar{
  display: flex;
+  height: 50px;
  width: 100vw;
  align-items: center;
  justify-content: center;
 }
 
 .search{
-    width: max-content;
+    top: 5px;
+    position: fixed;
+    width: 20vw;
+    height: 40px;
     display: flex;
     align-items: center;
     padding: 8px;
@@ -17,6 +21,7 @@
 }
 
 .search-input{
+    width: 15vw;
     color: #333333;
     outline: none;
     border: none;
@@ -32,7 +37,9 @@
     outline: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 32px;
+    width: 35px;
 }
 
 .search-button:hover{
@@ -45,43 +52,31 @@
     box-sizing: border-box;
 
 }
+
+.topbar-ul{
+     position: fixed;
+     left: 5px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     gap: 16px;
+     list-style: none;
+}
+
+.topbar-ul li:hover{
+   background-color: #e7e7e7df;
+   padding: 8px 8px;
+}
+
 body {
     background: whitesmoke;
     width: 100vw;
     height: 100vh;
     display: flex;
     font-family: 'Inter', 'Roboto', sans-serif, serif;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
-ul {
-    list-style: none;
-    width: 100vw;
-    height: 5vh;
-    background: rgb(167, 167, 167);
-position: fixed;
-top: 0;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content:space-between;
-padding: 0 30vw 0 30vw;
-}
-ul li {
-    cursor: pointer;
 
-}
-ul li:hover {
-    color: white;
-    transition: 250ms;
-    background-color: #e7e7e7df; 
-    border-radius: 14px;
-}
-ul li:active {
-    transition: 250ms;
-    color: black;
-}
+
 .hide {
     position: absolute;
     display: none;
