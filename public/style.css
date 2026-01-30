@@ -65,7 +65,7 @@ margin: 0 0 0 3%;
 
 .topbar-ul{
     padding: 8px 8px;
-     position: fixed;
+
      left: 5px;
      height: 50px;
      display: flex;
@@ -113,10 +113,13 @@ h1 {
     font-size: 3vh;
 }
 .admin {
-    width: 7vw;
+    width: fit-content;
     height: 2vh;
     border-radius: 15px;
     border: 3px solid rgb(199, 199, 199);
+    padding: 1%;
+    text-align: center;
+    
 }
 .topbar-ul li:active:not(.noclickable) {
 color: rgb(150, 150, 150);
@@ -167,4 +170,28 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+section * {
+    z-index: 20;
+}
+.admin {
+    position: fixed;
+    right: 0;
+}
+@media screen and (max-width: 1300px) {
+nav {
+    display: block;
+   height: 16vh;
+
+}
+nav * {
+    width: fit-content;
+    height: fit-content;
+}
+.switch {
+    height: 30%;
+    transform: translateX(50vw);
+
+}
 }
