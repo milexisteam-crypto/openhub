@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenHub - Admin Panel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=admin_panel_settings" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <form class="loginForm">
+            <span class="material-symbols-outlined icon">admin_panel_settings</span>
+            <div><input type="text" name="" placeholder="" id="username"><label for="username">Username</label></div>
+            <div><input type="password" name="" id="password" placeholder=""><label for="password">Password</label></div>
+            <button class="send">Send Code</button>
+            <div><input type="text" class="code" maxlength="11" inputmode="numeric" id="code" autocomplete="off" placeholder=""/><label for="code">Code</label></div>
+            <button class="loginButton">Login</button>
+
+</div>
+        </form>
+    </div>
+    <script>
+          const input = document.querySelector(".code");
+
+  input.addEventListener('input', (e) => {
+    // 1. bierzemy tylko cyfry
+    let digits = e.target.value.replace(/\D/g, '');
+
+    // 2. max 9 cyfr
+    digits = digits.slice(0, 9);
+
+    // 3. wstawiamy myślniki co 3 cyfry
+    let formatted = '';
+    for (let i = 0; i < digits.length; i++) {
+      if (i > 0 && i % 3 === 0) {
+        formatted += ' ';
+      }
+      formatted += digits[i];
+    }
+
+    e.target.value = formatted;
+  });
+  document.querySelector(".loginForm").addEventListener('submit', (e) => {
+    e.preventDefault(); // blokuje wysyłkę
+    console.log("Formularz NIE został wysłany");
+  });
+
+
+
+    </script>
+</body>
+</html>
