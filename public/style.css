@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.topbar{
+.nav{
  display: flex;
-  height: 50px;
+  height: 5vh;
+  background: whitesmoke;
  width: 100vw;
  align-items: center;
  justify-content: center;
+     -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+-moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .search{
@@ -67,7 +71,10 @@
 .topbar-ul li{
     padding: 8px 8px;
 }
-
+nav {
+    top: 0;
+    position: fixed;
+}
 .topbar-ul li:hover{
     cursor: pointer;
    background-color: #e7e7e7df;
@@ -81,6 +88,8 @@ body {
     height: 100vh;
     display: flex;
     font-family: 'Inter', 'Roboto', sans-serif, serif;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -90,7 +99,7 @@ body {
     opacity: 0;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 3vh;
 }
 .admin {
     width: 7vw;
