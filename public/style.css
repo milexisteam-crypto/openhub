@@ -75,6 +75,8 @@ ul li {
 ul li:hover {
     color: white;
     transition: 250ms;
+    background-color: #e7e7e7df; 
+    border-radius: 14px;
 }
 ul li:active {
     transition: 250ms;
