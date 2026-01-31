@@ -3,21 +3,20 @@
 
 nav{
  display: flex;
-  height: 5vh;
+  
   background: whitesmoke;
  width: 100vw;
+ height: 50px;
  position: fixed;
  top: 0;
  left: 0;
- align-items: center;
- justify-content: center;
      -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .search{
-    width: 20vw;
+    width: clamp(280px, 85vw, 688px);
     height: 40px;
     display: flex;
     align-items: center;
@@ -27,7 +26,7 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .search-input{
-    width: 15vw;
+     width: clamp(270px, 75vw, 678px);
     color: #333333;
     outline: none;
     border: none;
@@ -129,7 +128,7 @@ h2 {
     background: black;
 }
 .switch {
-    width: 4rem;
+    width: 80px;
     height: 50%;
     border: 3px solid rgb(139, 139, 139);
     background: transparent;
@@ -172,8 +171,7 @@ section * {
 }
 @media screen and (max-width: 1300px) {
 nav {
-    display: block;
-   height: 16vh;
+   height: 50px;
 
 }
 nav * {
@@ -206,7 +204,7 @@ nav * {
     flex-direction: column;
 }
 
-h1{
+.openhub-logo{
     font-size: 5rem;
 }
 
