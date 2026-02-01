@@ -71,7 +71,7 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 .topbar-ul{
     padding: 8px 8px;
@@ -304,14 +304,15 @@ section {
         width: max-content;
         height: fit-content;
         padding: 1% 2% 1% 2%;
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgb(0, 0, 0);
         border-radius: 15px;
         background: transparent;
-        color: white;
+        color: rgb(0, 0, 0);
         cursor: pointer;
+        margin-top: 10%;
     }
-    .scrskip .dark {
-        border: 1px solid rgb(0, 0, 0);
+    body.dark .scrskip {
+        border: 1px solid rgb(255, 255, 255);
         color: rgb(255, 255, 255);
     }
 }
