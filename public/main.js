@@ -4,6 +4,7 @@ document.querySelector(".admin").addEventListener("click", () => {
 document.querySelector(".switch").addEventListener("click", () => {
     document.querySelector(".switch").classList.toggle("turn")
     document.querySelector("body").classList.toggle("dark")
+    document.querySelector(".scrskip").classList.toggle("dark")
 })
 document.querySelector(".logo").addEventListener("click", () => {
     document.querySelector(".home").scrollIntoView({

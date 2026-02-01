@@ -82,3 +82,4 @@ input:not(:placeholder-shown) + label {
 opacity: 0;
 transform: translateX(10rem);
 }
+
