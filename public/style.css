@@ -141,6 +141,9 @@ h1 {
 color: rgb(150, 150, 150);
 background: transparent;
 }
+.topbar-ul li {
+    width: max-content;
+}
 h2 {
     font-size: 2rem;
     font-weight: 400;
@@ -282,7 +285,7 @@ section {
         font-family: 'Arial', 'Calibri', 'Roboto', sans-serif;
     }
 }
-@media (max-width: 530px) {
+@media (max-width: 630px) {
     .screrr {
         display: flex;
         align-items: center;
