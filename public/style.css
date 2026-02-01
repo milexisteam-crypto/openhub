@@ -21,7 +21,7 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 .search{
     width: clamp(180px, 45vw, 588px);
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
     padding: 8px;
@@ -47,8 +47,8 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 32px;
-    width: 35px;
+    height: 28px;
+    width: 30px;
     cursor: pointer;
 }
 .search-button:active , .search-button:active * {
