@@ -3,7 +3,8 @@
 
 nav{
  display: flex;
-  
+  align-items: center;
+  justify-content: space-between;
   background: whitesmoke;
  width: 100vw;
  height: 50px;
@@ -20,7 +21,10 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     width: fit-content;
 }
 .search{
-    width: clamp(180px, 45vw, 588px);
+    position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+    width: 45vw;
     height: 35px;
     display: flex;
     align-items: center;
@@ -30,7 +34,7 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .search-input{
-    width: clamp(170px, 35vw, 578px);
+    width: 40vw;
     color: #333333;
     outline: none;
     border: none;
