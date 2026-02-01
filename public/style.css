@@ -20,7 +20,7 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     width: fit-content;
 }
 .search{
-    width: clamp(280px, 85vw, 688px);
+    width: clamp(180px, 45vw, 588px);
     height: 40px;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .search-input{
-    width: clamp(270px, 75vw, 678px);
+    width: clamp(170px, 35vw, 578px);
     color: #333333;
     outline: none;
     border: none;
